@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,500&display=swap');
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Work Sans', sans-serif;
+    background: url("images/orchid.jpg") no-repeat center center fixed;
+    background-color: #000000;
+}
+
+#intro p {
+    margin: 0;
+    padding: 10px;
+    font-size: 26px;
+    text-align: center;
+    position: relative;
+    top: 23%;
+    transform: translateY(-50%);
+}
+
+#intro {
+    width: 400px;
+    height: 400px;
+    margin: 100px auto;
+    position: relative;
+    background: #fafafa;
+}
+
+#container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 27px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #de359a;
+}
+
+.link {
+    text-decoration: none;
+    color: #542270;
+}
+
+.link:hover {
+    color: #8a4bad;
+}
+
+.toggle {
+    width: 100%;
+    padding: 10px 20px;
+    text-align: right;
+    box-sizing: border-box;
+    font-size: 43px;
+    display: none;
+}
+
+@media (max-width: 768px)
+{
+    .toggle {
+        display: block;
+    }
+
+    ul {
+        width: 100%;
+        display: none;
+    }
+
+    ul li {
+        display: block;
+        text-align: right;
+    }
+
+    .active {
+        display: block;
+    }
+
+    #container {
+        width: 91%;
+        margin: 0 auto;
+    }
+}
